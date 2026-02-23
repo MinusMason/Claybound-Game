@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Created by Pierre Chardaire. 
+% Updated by Rudy Lapeer update: 10/2024
+% Final Update by Mohsin Raza Last update: 10/2025
+% Change the option between square brackets
+% depending on the document you have to write:
+%
+% review      for the literature review + plan
+% progress    for the progress report
+% final       for the final report
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[progress]{cmpreport}
+
+
+% Some package I am using. You may not need them
+%
+\usepackage{rotating}
+\usepackage{subfloat}
+\usepackage{color}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{enumitem}
+%\setkeys{Gin}{draft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Fill in the fields with:
+%
+%  your project title
+%  your name
+%  your registration number
+%  your supervisor's name
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Game Design Report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The author's name is ignored if the following command 
+% is not present in the document
+%
+% Before submitting a PDF of your final report to the 
+% project database you may comment out the command
+% if you are worried about lack of anonymity.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Mason Buckle}
+
+\registration{100428908}
+\supervisor{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Fill in the field with your module code.
+% this should be:
+%
+% for BIS project module   -> CMP-6012Y
+% for STATS project module -> CMP-6028Y
+% for CS project module    -> CMP-6013Y
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ccode{CMP-6056B}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Comment out if confidential report.
+% The command should be used if the project is subjected 
+% to a Non Disclosure Agreement.
+%
+% Three examples of the use of the \confidential command. 
+% Please ask your supervisor what confidential statement 
+% should be used, if appropriate.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\confidential{}
+
+%\confidential{The contents of this report remain confidential for two years and should not be discussed or disclosed to any third party without the prior written permission from the School of Computing Sciences, the University of East Anglia}
+
+%\confidential{The information contained in this document is confidential, privileged and only for the information of the intended recipient and may not be used, published or redistributed without the prior written consent of FruitName Ltd}
+
+\summary{
+This document explains how to use the class file \texttt{cmpreport.cls} to write your reports.
+The class file has been designed to simplify your life; many things are done for you. As a consequence
+some commands presented here are specific to the class file whether they are new commands or customized versions
+of commonly known \LaTeX\ commands.
+}
+
+\acknowledgements{
+This section is used to acknowledge whoever's support and contribution.
+The command that introduces it is ignored in the project literature review and progress report. It is used in the final report,  but  is not compulsory. If you do not
+have an acknowledgements command in your preamble then there
+won't be any acknowledgement section in the document produced. \emph{Abstract} and \emph{Acknowledgements} sections should fit on the same page. 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% If you do not want a list of figures and a list of tables
+% to appear after the table of content then uncomment this line 
+%
+% Note that the class file contains code to avoid
+% producing an empty list section (e.g list of figures) if the 
+% list is empty (i.e. no figure in document).
+%
+% The command also prevents inserting a list of figures or tables 
+% anywhere else in the document
+%
+% Some supervisors think that a report should not contain these
+% lists. Please ask your supervisor's opinion.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\nolist
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Comment out if you want your list of figures and list of
+% tables on two or more pages, in particular if the lists do not fit 
+% on a single page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onePageLists
+
+
+\begin{document}
+
+\tableofcontents
+\clearpage
+
+\section{Summary}
+
+
+\subsection{Synopsis}
+
+
+\clearpage
+\subsection{Target Audience}
+
+\clearpage
+
+\subsection{Game Experience}
+
+\clearpage
+
+\subsection{MoSCoW}
+
+\clearpage
+\section{Background}
+
+\subsection{Risk Of Rain 2}
+See Figure 1 in the appendix. This game is roguelike, third person shooter created by Hopoo Games.
+
+
+\subsection{Megabonk}
+
+\clearpage
+
+\section{Specification}
+
+
+\clearpage
+
+\subsection{Story}
+\subsection{Game aesthics}
+\subsection{Game content}
+\subsection{Game mechanics}
+\subsection{Game technology}
+
+\clearpage
+
+\section{Prototype}
+\clearpage
+\section{Conclusion}
+\clearpage
+
+
+\bibliography{references}
+
+\appendix
+\clearpage
+
+\section{Appendix}
+\subsection{System Architecture}
+\label{app:architecture}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{sys-arch.png}
+    \caption{SPH Fluid Simulation System Architecture Diagram}
+    \label{fig:system_architecture}
+\end{figure}
+
+\noindent This diagram illustrates the overall system architecture showing the initialization phase and the main simulation loop
+\clearpage
+\subsection{Original Objectives}
+\label{app:obj}
+\begin{enumerate}
+    \item Project Proposal (Weeks 1-2): Draft a project proposal, receive feedback and update accordingly.
+    
+    \item Literature review (Weeks 2-6): Write up a literature review on the project comparing different methodologies and literature. Decide on what methodology to use.
+    
+    \item Design (Week 6-8): Look over the core algorithms and chosen method to deepen understanding
+    
+    \item Coding (Week 8-22): Code and implement the fluid simulation
+    
+    \item Testing and evaluation (8-26): Generally testing as code base develops and once done run evaluation testing
+    
+    \item Final report and project submission (Week 26-34): Write up final report and submit project
+\end{enumerate}
+\clearpage
+
+\section{Gantt chart} \label{ApB}
+\begin{cmpfigure}[htb]{Project Gantt chart \label{pplan}}
+\begin{sideways}
+\newganttchartelement{voidbar}{
+voidbar/.style={
+draw=black,
+top color=black!25,
+bottom color=black!23
+}}
+\begin{ganttchart}[x unit=0.35cm, y unit chart = 1.0cm, y unit title=0.5cm, title height=1.0, vgrid, title label font=\scriptsize,
+canvas/.style={draw=black, dotted},
+/pgfgantt/milestone left shift = 0,
+/pgfgantt/milestone right shift = 0
+]{1}{34}
+\gantttitle{Project schedule shown for semester week numbers}{34} \\
+\gantttitlelist{1,...,34}{1}\\
+\gantttitlelist{1,...,12}{1}
+\gantttitle{CB}{4}
+\gantttitle{AP}{2}
+\gantttitlelist{1,...,8}{1}
+\gantttitle{EB}{4}
+\gantttitlelist{9,...,12}{1}\\
+%the elements, bars and milestones, are identified as elem0, elem1, etc
+
+\ganttbar{Project proposal}{1}{2}     \\  %elem0  
+\ganttbar{Literature review}{2}{5}    \\  %elem1 
+\ganttbar{Design}{6}{11}              \\  %elem2
+
+\ganttbar{Coding}{13}{24}              \\  %elem3
+\ganttbar{Low-level design}{13}{14}    \\  %elem4
+
+\ganttbar{Testing}{15}{15}             %elem5
+\ganttvoidbar{}{16}{16}                %elem6
+\ganttbar{}{17}{26}                 \\ %elem7
+
+\ganttmilestone{Code delivery}{26}    \\ %elem8
+\ganttbar{Final report writing}{25}{30}        \\ %elem9
+\ganttmilestone{Portfolio submission}{33}  \\ %elem10
+\ganttbar{Inspection prep}{31}{34}  %elem11
+%
+\ganttlink{elem0}{elem2} 
+\ganttlink{elem1}{elem2} 
+\ganttlink{elem2}{elem3}
+\ganttlink{elem2}{elem4}
+\ganttlink[link mid=.25]{elem2}{elem5} 
+\ganttlink{elem7}{elem8} 
+\ganttlink{elem8}{elem9}
+\ganttlink{elem9}{elem10} 
+\ganttlink{elem10}{elem11}
+
+\end{ganttchart}
+\end{sideways}
+\end{cmpfigure}
+
+
+\end{document}
+
