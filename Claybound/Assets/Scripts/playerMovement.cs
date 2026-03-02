@@ -10,7 +10,8 @@ public class playerMovement : MonoBehaviour
     private Rigidbody m_Rigidbody;         
     private float m_MovementInputValue;    
     private float m_TurnInputValue;        
-     
+    
+    Animator animator;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class playerMovement : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         m_MovementAxisName = "Vertical";
         m_TurnAxisName = "Horizontal";
     }
