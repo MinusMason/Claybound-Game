@@ -40,10 +40,13 @@ public class playerMovement : MonoBehaviour
 
     private void Update()
     {
+
+        animator.SetBool("isRunning", m_MovementInputValue != 0f);
         // Store the player's input and make sure the audio for the engine is playing.
         m_MovementInputValue = Input.GetAxis(m_MovementAxisName);
         m_TurnInputValue = Input.GetAxis(m_TurnAxisName);
 
+        
     }
 
     private void FixedUpdate()
