@@ -1,22 +1,20 @@
 \contentsline {section}{\numberline {1}Summary}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Synopsis}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Target Audience}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Game Experience}{5}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}MoSCoW}{6}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Background}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Risk Of Rain 2}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Megabonk}{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Specification}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Story}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Game aesthics}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {1.1}Synopsis}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Target Audience}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Game Experience}{6}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}MoSCoW}{7}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Background}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\emph {Risk Of Rain 2 (2020)}}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}\emph {Megabonk (2025)}}{8}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Specification}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Game Story}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Game aesthetics}{9}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Game content}{9}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Game mechanics}{9}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Game technology}{9}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Prototype}{10}{section.4}%
 \contentsline {section}{\numberline {5}Conclusion}{11}{section.5}%
-\contentsline {section}{References}{12}{section*.2}%
+\contentsline {section}{References}{12}{section*.4}%
 \contentsline {section}{\numberline {A}Appendix}{13}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}System Architecture}{13}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Original Objectives}{14}{subsection.A.2}%
-\contentsline {section}{\numberline {B}Gantt chart}{15}{appendix.B}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

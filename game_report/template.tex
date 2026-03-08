@@ -21,6 +21,10 @@
 \usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{justification=centering}
 %\setkeys{Gin}{draft}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,40 +130,103 @@ won't be any acknowledgement section in the document produced. \emph{Abstract} a
 \clearpage
 
 \section{Summary}
+The title of the game is 'Claybound', the game consists of mainly two different genres: \cite{}
+\begin{itemize}
+    \item Rougelite
+    \item Role Playing Game (RPG)
+\end{itemize}
 
-
+\clearpage
 \subsection{Synopsis}
-
+Claybound is a rougelite in which the player takes control of a clay like creation called a homunculus brought to life by a lazy and irresponsible wizard.
+Abandoned in a dungeon with nothing but a basic weapon, the player must battle through hordes of enemies, uncover new weapons and proceed to the next floor of the dungeon, all while the dungeon grows 
+increasingly more difficult as time ticks by. Items can be found in boxes scattered around however acquiring them requires rolling a dice, with the outcomes being determined by one of four stats. The overarchong goal is to clean up the wizards mess and survive long enough. 
 
 \clearpage
 \subsection{Target Audience}
-
+The game will be set at PEGI 12 due it containing mild violence, some horror elements and crude humour, however the game will be able to be enjoyed by a wide variety of age ranges and players alike.
+The primary audience will be players age 16 - 25 who are already fans of similar rouglikes such as Risk Of Rain 2 (CITE!), Hades (CITE!) or Vampire Survivors. This is due to them already understanding run based progression and item building already,
+meaning the core game loop does not need explaining, this audience will most likely value replayability of the story elements
+\newline
+\newline
+The secondary audience will be fans of narrative driven RPG's such as Baldurs Gate 3 or Disco elysium who enjoy the stat expression. This audience most likely wont be too familar with roguelikes but are drawn in by humour, world building and the fact their 
+choices have personality.
 \clearpage
 
 \subsection{Game Experience}
-
+There are a variety of things I would like the player to feel but the main thing would be Grit, as just like the homunculus you are playing you must never give up and keep trying to escape
+this dungeon you have been forced into
 \clearpage
 
 \subsection{MoSCoW}
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{p{3.5cm}p{3.5cm}p{3.5cm}p{3.5cm}}
+\toprule
+\textbf{Must Have} & \textbf{Should Have} & \textbf{Could Have} & \textbf{Won't Have} \\
+\midrule
+Basic Movement Mechanics & Health \& Combat System & Multiple Dungeon Levels & High Fidelity Textures \& Assets \\
+\addlinespace
+Four-Stat System (MIGHT, FINESSE, WEIRD, GAB) & Variety of Weapons & Sound System & Self-Made 3D Assets \\
+\addlinespace
+Dice Roll Chest Mechanic & Enemy NPCs with Cone Detection AI & NPC Scheduling \& Routines & Visual Novel Story Implementation \\
+\addlinespace
+Item Pickup \& Stat Modification & Basic Boss Encounter & Stat-Specific NPC Interactions & Multiplayer \\
+\addlinespace
+Level Completion Condition & Tetris-Style Inventory & Main Menu with Lore & Procedurally Generated Levels \\
+\addlinespace
+Timer \& Difficulty Scaling & Basic Animation & & \\
+\addlinespace
+NPCs with Basic AI & Retro Shader Applied to Environment & & \\
+\addlinespace
+Menus \& Basic UI & & & \\
+\addlinespace
+A Single Fully Developed Level & & & \\
+\bottomrule
+\end{tabular}
+\caption{MoSCoW Prioritisation -- Claybound}
+\label{tab:moscow}
+\end{table}
+
 
 \clearpage
 \section{Background}
 
-\subsection{Risk Of Rain 2}
-See Figure 1 in the appendix. This game is roguelike, third person shooter created by Hopoo Games.
+\subsection{\emph{Risk Of Rain 2 (2020)}}
+See Figure 1 in the appendix. \textit{Risk of Rain 2 (CITE!)} is a third-person roguelite in which the player controls a survivour that battles through 
+increasingly dangerous worlds, escaping through a portal whilst managing a timer that keeps increasing the difficulty. Claybound draws direct inspiration
+from this structure, adopting the timer based difficulty and run based item progression yet grounding these mechanincs in a more narrative, character driven world.
 
-
-\subsection{Megabonk}
-
+\subsection{\emph{Megabonk (2025)}}
+\textit{Megabonk(CITE!)} is a third person roguelite survival game similar to Risk of Rain 2 in which the player navigates 3D maps, fighting waves of enemies and bosses whilst their weapons
+attack automatically. This game proved the auto attacking 'bullet heaven' formula crated by Vampire Survivors could successfully be translated into a 3D space. Claybound draws two key influences from
+\textit{Megabonk}:
+\begin{itemize}
+    \item Auto attacking weapon system - allows the player to focus more on movement rather then combat inputs
+    \item Retro low-poly aesthetic 
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{megabonk.jpg}
+    \caption{Megabonk Retro Style graphics}
+    \label{fig:yourlabel}
+\end{figure}
 \clearpage
 
 \section{Specification}
 
-
-\clearpage
-
-\subsection{Story}
-\subsection{Game aesthics}
+\subsection{Game Story}
+Claybound is set in the forgotten dungeon of a wizard unnamed, this chaotic basement is full of remnants of 
+failed experiments, escaped creatures and magical neglect. Rather than clean it himself, the wizard decides to delegate this task. Using a hastily put together
+spell, he created a clay humanoid called a homunculus and drop it into his dungeon with nothing but a basic weapon and vague instructions to sort everything out.
+\newline
+\newline 
+The homunculus has no memory, no name and no choice. Armed with instinct and a range of scavenged items, the player must fight through waves of the dunegons inhabitants, locate the portal
+to the next floor and defeat whatever the wizard left locked in the basement.
+\subsection{Game aesthetics}
+The overall aesthetic of the game is darkly comedic, the homuculus is an unwilling protagonist thrust into a dangerous situation, and the world reflects this. Enemies include failed experiments and escaped subjects. The story is mainly told environmentally rather than through cutscenes, thus rewarding players who interact 
+throught the world with the dice roll system.
 \subsection{Game content}
 \subsection{Game mechanics}
 \subsection{Game technology}
@@ -181,85 +248,13 @@ See Figure 1 in the appendix. This game is roguelike, third person shooter creat
 \subsection{System Architecture}
 \label{app:architecture}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{sys-arch.png}
-    \caption{SPH Fluid Simulation System Architecture Diagram}
-    \label{fig:system_architecture}
-\end{figure}
 
-\noindent This diagram illustrates the overall system architecture showing the initialization phase and the main simulation loop
-\clearpage
-\subsection{Original Objectives}
-\label{app:obj}
-\begin{enumerate}
-    \item Project Proposal (Weeks 1-2): Draft a project proposal, receive feedback and update accordingly.
-    
-    \item Literature review (Weeks 2-6): Write up a literature review on the project comparing different methodologies and literature. Decide on what methodology to use.
-    
-    \item Design (Week 6-8): Look over the core algorithms and chosen method to deepen understanding
-    
-    \item Coding (Week 8-22): Code and implement the fluid simulation
-    
-    \item Testing and evaluation (8-26): Generally testing as code base develops and once done run evaluation testing
-    
-    \item Final report and project submission (Week 26-34): Write up final report and submit project
-\end{enumerate}
+
 \clearpage
 
-\section{Gantt chart} \label{ApB}
-\begin{cmpfigure}[htb]{Project Gantt chart \label{pplan}}
-\begin{sideways}
-\newganttchartelement{voidbar}{
-voidbar/.style={
-draw=black,
-top color=black!25,
-bottom color=black!23
-}}
-\begin{ganttchart}[x unit=0.35cm, y unit chart = 1.0cm, y unit title=0.5cm, title height=1.0, vgrid, title label font=\scriptsize,
-canvas/.style={draw=black, dotted},
-/pgfgantt/milestone left shift = 0,
-/pgfgantt/milestone right shift = 0
-]{1}{34}
-\gantttitle{Project schedule shown for semester week numbers}{34} \\
-\gantttitlelist{1,...,34}{1}\\
-\gantttitlelist{1,...,12}{1}
-\gantttitle{CB}{4}
-\gantttitle{AP}{2}
-\gantttitlelist{1,...,8}{1}
-\gantttitle{EB}{4}
-\gantttitlelist{9,...,12}{1}\\
-%the elements, bars and milestones, are identified as elem0, elem1, etc
 
-\ganttbar{Project proposal}{1}{2}     \\  %elem0  
-\ganttbar{Literature review}{2}{5}    \\  %elem1 
-\ganttbar{Design}{6}{11}              \\  %elem2
 
-\ganttbar{Coding}{13}{24}              \\  %elem3
-\ganttbar{Low-level design}{13}{14}    \\  %elem4
 
-\ganttbar{Testing}{15}{15}             %elem5
-\ganttvoidbar{}{16}{16}                %elem6
-\ganttbar{}{17}{26}                 \\ %elem7
-
-\ganttmilestone{Code delivery}{26}    \\ %elem8
-\ganttbar{Final report writing}{25}{30}        \\ %elem9
-\ganttmilestone{Portfolio submission}{33}  \\ %elem10
-\ganttbar{Inspection prep}{31}{34}  %elem11
-%
-\ganttlink{elem0}{elem2} 
-\ganttlink{elem1}{elem2} 
-\ganttlink{elem2}{elem3}
-\ganttlink{elem2}{elem4}
-\ganttlink[link mid=.25]{elem2}{elem5} 
-\ganttlink{elem7}{elem8} 
-\ganttlink{elem8}{elem9}
-\ganttlink{elem9}{elem10} 
-\ganttlink{elem10}{elem11}
-
-\end{ganttchart}
-\end{sideways}
-\end{cmpfigure}
 
 
 \end{document}
