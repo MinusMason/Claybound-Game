@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  8 MAR 2026 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  9 MAR 2026 22:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -846,38 +846,38 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@count@id=\count382
 \enitdp@description=\count383
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 127.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 128.
  (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-Package scrbase Info: activating english \abstractname on input line 127.
-Package scrbase Info: activating english \partname on input line 127.
-Package scrbase Info: activating english \figurename on input line 127.
-Package scrbase Info: activating english \tablename on input line 127.
-Package scrbase Info: activating english \contentsname on input line 127.
-Package scrbase Info: activating english \listfigurename on input line 127.
-Package scrbase Info: activating english \listtablename on input line 127.
-Package scrbase Info: activating english \refname on input line 127.
-Package scrbase Info: activating english \indexname on input line 127.
-Package tocbasic Info: usage of `tocbibind' detected on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+Package scrbase Info: activating english \abstractname on input line 128.
+Package scrbase Info: activating english \partname on input line 128.
+Package scrbase Info: activating english \figurename on input line 128.
+Package scrbase Info: activating english \tablename on input line 128.
+Package scrbase Info: activating english \contentsname on input line 128.
+Package scrbase Info: activating english \listfigurename on input line 128.
+Package scrbase Info: activating english \listtablename on input line 128.
+Package scrbase Info: activating english \refname on input line 128.
+Package scrbase Info: activating english \indexname on input line 128.
+Package tocbasic Info: usage of `tocbibind' detected on input line 128.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -937,7 +937,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 127.
+Package hyperref Info: Link coloring OFF on input line 128.
  (./template.out) (./template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
@@ -949,7 +949,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 127.
+(scrartcl)           before \begin{document} on input line 128.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -963,7 +963,7 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 127.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 128.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -973,16 +973,16 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 129.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 130.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 129.
+(Font)              scaled to size 10.79993pt on input line 130.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 129.
+(Font)              scaled to size 10.79993pt on input line 130.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 129.
+(Font)              scaled to size 15.55188pt on input line 130.
  (./template.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 2.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -1017,141 +1017,190 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 135.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 136.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 140.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--153
+
+ []
+
+
 
 [3
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 140.
-
-
-[4
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 147--154
-
- []
-
-
-
-[5
-
-]
-
-[6
-
-]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 165.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|\T1/ptm/m/n/10.95 Multiple Dun-geon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []|\T1/ptm/m/n/10.95 Four-Stat Sys-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \T1/ptm/m/n/10.95 (MIGHT, FI-NESSE,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 []|\T1/ptm/m/n/10.95 Enemy NPCs with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
 []|\T1/ptm/m/n/10.95 NPC Schedul-ing &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 []|\T1/ptm/m/n/10.95 Visual Novel Story
  []
 
 
-Underfull \hbox (badness 3000) in paragraph at lines 175--175
+Underfull \hbox (badness 3000) in paragraph at lines 173--173
 []|\T1/ptm/m/n/10.95 Item Pickup & Stat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 []|\T1/ptm/m/n/10.95 Level Com-ple-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 []|\T1/ptm/m/n/10.95 Procedurally Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|\T1/ptm/m/n/10.95 Timer & Dif-fi-culty
  []
 
 
-Overfull \hbox (28.08484pt too wide) in paragraph at lines 165--188
+Overfull \hbox (28.08484pt too wide) in paragraph at lines 163--186
  [][] 
  []
 
 
 
-[7
+[4
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 196.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 194.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 12.9599pt on input line 196.
-<megabonk.jpg, id=82, 1927.2pt x 1084.05pt>
+(Font)              scaled to size 12.9599pt on input line 194.
+<megabonk.jpg, id=78, 1927.2pt x 1084.05pt>
 File: megabonk.jpg Graphic file (type jpg)
 <use megabonk.jpg>
-Package pdftex.def Info: megabonk.jpg  used on input line 211.
+Package pdftex.def Info: megabonk.jpg  used on input line 209.
 (pdftex.def)             Requested size: 209.12686pt x 117.62482pt.
 
 
-[8
+[5
 
  <./megabonk.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 220--227
+Underfull \hbox (badness 10000) in paragraph at lines 218--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
 
  []
 
 
 
-[9
+[6
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 245--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--259
+
+ []
+
+
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 260--266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--289
+
+ []
+
+
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 296--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--308
+
+ []
+
+
+
+[9]
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 10.79993pt on input line 312.
+
 
 [10
 
-]
-
-[11
-
 ] (./template.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
+Underfull \hbox (badness 5175) in paragraph at lines 28--32
+[]\T1/ptm/m/n/12 vedinad (2025).  Megabonk.  []$\T1/phv/m/sl/12 https : / / store . steampowered . com / app / 3405340 /
+ []
 
 )
 
-[12
+[11
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 336--342
 
-[13
+ []
+
+
+
+[12
 
 ] (./template.aux)
  ***********
@@ -1162,18 +1211,18 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35539 strings out of 473190
- 780233 string characters out of 5715799
- 1263069 words of memory out of 5000000
- 58219 multiletter control sequences out of 15000+600000
- 612264 words of font info for 100 fonts, out of 8000000 for 9000
+ 35567 strings out of 473190
+ 780631 string characters out of 5715799
+ 1264071 words of memory out of 5000000
+ 58238 multiletter control sequences out of 15000+600000
+ 618083 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,17n,121p,11022b,1073s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (13 pages, 436629 bytes).
+ 122i,17n,121p,11022b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (12 pages, 460855 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,6 +24,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{hyperref}
 \captionsetup{justification=centering}
 %\setkeys{Gin}{draft}
 
@@ -132,17 +133,15 @@ won't be any acknowledgement section in the document produced. \emph{Abstract} a
 \section{Summary}
 The title of the game is 'Claybound', the game consists of mainly two different genres: \cite{}
 \begin{itemize}
-    \item Rougelite
+    \item Rougelite (For a analysis distingusishing the difference between roguelites and roguelikes, refer to Appendix \ref{sec:genre} )
     \item Role Playing Game (RPG)
 \end{itemize}
 
-\clearpage
 \subsection{Synopsis}
 Claybound is a rougelite in which the player takes control of a clay like creation called a homunculus brought to life by a lazy and irresponsible wizard.
 Abandoned in a dungeon with nothing but a basic weapon, the player must battle through hordes of enemies, uncover new weapons and proceed to the next floor of the dungeon, all while the dungeon grows 
 increasingly more difficult as time ticks by. Items can be found in boxes scattered around however acquiring them requires rolling a dice, with the outcomes being determined by one of four stats. The overarchong goal is to clean up the wizards mess and survive long enough. 
 
-\clearpage
 \subsection{Target Audience}
 The game will be set at PEGI 12 due it containing mild violence, some horror elements and crude humour, however the game will be able to be enjoyed by a wide variety of age ranges and players alike.
 The primary audience will be players age 16 - 25 who are already fans of similar rouglikes such as Risk Of Rain 2 (CITE!), Hades (CITE!) or Vampire Survivors. This is due to them already understanding run based progression and item building already,
@@ -156,7 +155,6 @@ choices have personality.
 \subsection{Game Experience}
 There are a variety of things I would like the player to feel but the main thing would be Grit, as just like the homunculus you are playing you must never give up and keep trying to escape
 this dungeon you have been forced into
-\clearpage
 
 \subsection{MoSCoW}
 \begin{table}[h]
@@ -194,12 +192,12 @@ A Single Fully Developed Level & & & \\
 \section{Background}
 
 \subsection{\emph{Risk Of Rain 2 (2020)}}
-See Figure 1 in the appendix. \textit{Risk of Rain 2 (CITE!)} is a third-person roguelite in which the player controls a survivour that battles through 
+See Figure 1 in the appendix. \textit{Risk of Rain 2 (\cite{ror2})} is a third-person roguelite in which the player controls a survivour that battles through 
 increasingly dangerous worlds, escaping through a portal whilst managing a timer that keeps increasing the difficulty. Claybound draws direct inspiration
 from this structure, adopting the timer based difficulty and run based item progression yet grounding these mechanincs in a more narrative, character driven world.
 
 \subsection{\emph{Megabonk (2025)}}
-\textit{Megabonk(CITE!)} is a third person roguelite survival game similar to Risk of Rain 2 in which the player navigates 3D maps, fighting waves of enemies and bosses whilst their weapons
+\textit{Megabonk(\cite{megabonk})} is a third person roguelite survival game similar to Risk of Rain 2 in which the player navigates 3D maps, fighting waves of enemies and bosses whilst their weapons
 attack automatically. This game proved the auto attacking 'bullet heaven' formula crated by Vampire Survivors could successfully be translated into a 3D space. Claybound draws two key influences from
 \textit{Megabonk}:
 \begin{itemize}
@@ -227,15 +225,103 @@ to the next floor and defeat whatever the wizard left locked in the basement.
 \subsection{Game aesthetics}
 The overall aesthetic of the game is darkly comedic, the homuculus is an unwilling protagonist thrust into a dangerous situation, and the world reflects this. Enemies include failed experiments and escaped subjects. The story is mainly told environmentally rather than through cutscenes, thus rewarding players who interact 
 throught the world with the dice roll system.
-\subsection{Game content}
 \subsection{Game mechanics}
+\textbf{Core Game Loop}
+\newline
+The core gameplay loop is build around progression and risk management. Upon starting a new run, the homuculus rolls for random base stats. The player then enters the dungeon and engages in the main game mechanic: 
+fighting waves of enemies. Defeating these enemies drops gold, which can be spend at vendors to accquire new items, these items can also be accquired through interactables. Players must navigate the level to find 
+interactables or the portal to progress to the next floor via fighting a boss. Throughout this entire loop, a timer will be at the top of the screen constatnyl ticking up, steadily increasing the game's difficulty.
+\newline
+\newline 
+\textbf{The Stat System}
+\newline
+Character capability and interaction of the world are dictated by four core stats:
+\begin{itemize}
+    \item \textbf{Might:} Represents the strength and density of the clay body. It dictates brute force, increasing damage and knockback.
+    \item \textbf{Finesse:} Represents speed and hand-eye coordination. It dictates delicate work, increasing overall movement speed and attack speed.
+    \item \textbf{Weird:} Represents a connection to chaos and magical logic. It is used to understand what should not be understood, reducing the cooldowns of magical abilities and increasing elemental damage.
+    \item \textbf{Gab:} Represents the ability to manipulate the world through dumb luck. Increases critical hit chanve and improves the chance of finding better items. Used to lie, trick and het lucky.
+\end{itemize}
+\textbf{Interactables and Dice Rolling}
+\newline
+Scattered throughout the dungeon are interactables (e.g. chests, boulders and other mysterious objects) that grant items. Acquiring these items requires the player to pass a hidden difficulty check check. using a Dice Roll mechanic. 
+E.g. attempting to move a heavy boulder may have a hidden difficulty check of 7. The game will then roll a dice and add the player's "Might" stat, if the player has 3 Might and rolls a 2, the total is 5, thus resulting in a failure and no item.
+Successfull rolls reward the player with stat modifying items (e.g. "The Weight Boots" that grant +1 Might but -2 Finesse).
+\newline
+\newline
+To ensure fairness and game balance, at least one interactable for each stat \emph{(Might, Finesse, Weird and Gab)} will spawn on each level to guarentee that a player can recieve items outside of the vendors.
+\newline
+\newline
+\textbf{Combat}
+\newline
+Combat will occur using a auto attacking system similar to games like Megabonk (\cite{megabonk}) and Vampiter Survivours (\cite{vampiresurvivors}). With players picking up items that automatically shoot out from them and hitting the enemy to do damage, this puts more of a focus on the player to utilize their crowd control and movement abilities. If an enemy hits the player, it will lower the player health. Upon reaching 0 health the player will die and the run will be over.
+\newline
 \subsection{Game technology}
+The project will be developed in using \emph{Unity} due to its ease of use for beginners and wide array of tutorials and resources. Furthermore it is easy to implement custom shaders, which is necessary for the game's
+intended retro aesthetic.
+\newline
+\newline
+Due to self made 3D assets being outside this project's scope, the environment and characters will be made using pre-made assets sourced from the Unity Asset Store(CITE!) or platforms like Mixamo (\cite{mixamo}). These assets will be put together with a visually unique twist using 
+a custom Retro Shader (\cite{retroshader}) applied to the characters and environment. Basic animationsn will be implemented using Unity's built in Animator. Version control will be manage via GitHub for safe iterative development.
+
+\subsection{Game Characters}
+\textbf{The Homunculus (Player Character)}
+\newline
+The protagonist of the game is a nameless clay creation brought to life by a spell. Due to them being made of clay, they function as a literal and figurative blank slate for the player.
+Their capabilities are decided by the four core stats of the game which change how they interact with the world and survive the dungeon.
+\newline
+\newline 
+\textbf{The Lazy Wizard (Antagonist)}
+\newline
+Though unseen throughout the game, this character very much serves as the antagnonist of the game. Rather than cleaning his mess, he created the homunculus to do it for him.
+His abandones experiments serve as the primary obstacles of the game.
+\newline
+\newline
+\textbf{The Vendor}
+\newline
+A neutral NPC found within the dungeon. As outline in the core game loop. Players use gold from defeated enemies to purchase items from the vendor. They offer the player
+a brief moment of respite.
+\newline
+\newline
+\textbf{Failed Experiments (Enemies and Bosses)}
+The dungeon is populated with the wizards escaped creatures.
+\begin{itemize}
+    \item \textbf{Standard Enemies:} These enemies will roam the map using basic AI to track the plater. Due to the auto-attacking combat system, enemies are designed to attack the player in swarms to 
+    test the player's movement skills.
+    \item \textbf{The Boss:} A larger, more complex enemy encounter. The player must survive long enough to reach the boss 
+\end{itemize}
+
+
+\subsection{Game Content and Level Design} 
+Whilst \emph{Claybound} is a rouguelite game, the project scope is excluding procedurally generated levels and instead focusig on crafting a highly polished, single fully developed level. The environment is designed as a 3D arena with a retro aesthetic.
+\newline 
+\newline 
+\textbf{Dungeon Arenas}
+\newline
+Levels are very open and designed to allow for continous moevement. Due to the game having a timer that ticks up that increases difficulty, the areas are built to prevent the player from hiding. Players must navigate the open space fight herds of enemies whilst searching for the portal.
+\newline 
+\newline 
+\textbf{Environmental Interactables}
+\newline
+The level design incorporates the Dice Roll mechanic by having environmental interactables with hidden difficulty number scattered across the map. 
+E.g. A huge boulder may require a "Might" check whilst convincing a skeleton to give you an item may require a "Gab" check. This will encourage the players to explore the map.
 
 \clearpage
 
 \section{Prototype}
-\clearpage
+The code for the two working game elements can be seen on my GitHub: (\url{https://github.com/MinusMason/Claybound-Game}).
+\subsection{Prototype purpose}
+The purpose of the prototype and the two working game elements (and more) are the following:
+\begin{itemize}
+    \item Basic Player movement and animation - The player can move in every direction using the WASD keys, an idle animation plays whilst still and a run animation plays when moving. This can be seen in(FIGURE???) the appendix
+    \item Enemy spawn and movement - Enemy's spawn in and have basic AI to move to follow the player. This can be seen in (FIGURE???) appendix 
+    \item Working camera - A camera that follows the player, currently just a child object of the player. This will be improved upon in the final version.
+    \item Basic environment and obstacles - Using Unity's ProBuilder (CITE) some basic obstacles have been created for the player to move around, this will be further built upon for more interesting level design in the final version. This can be seen in (FIGURE???) the appendix.
+\end{itemize}
 \section{Conclusion}
+To conclude, thus far I have implemented a few main features of the game, one that I intented to implement but did not was the dice roll mechanic, this is the most unique function of the game but was not implemented for the two working game elements due to it being the most complex feature and requiring more time and polish. 
+The main game features yet to be completed are : the dice roll mechanic, currency (gold) and the vendor, player and enemy health, the portal and Boss and Interactables. I believe these remaining elements are achievable withing the remaining development time, allowing me to deliver a fully playable vertical slice of \emph{Claybound}.
+
 \clearpage
 
 
@@ -245,8 +331,20 @@ throught the world with the dice roll system.
 \clearpage
 
 \section{Appendix}
-\subsection{System Architecture}
-\label{app:architecture}
+\subsection{Roguelite vs Roguelike}
+\label{sec:genre}
+"Roguelike" and "Roguelite" are often used interchangably by players but they both contain very different approaches to game mechanics, Understanding this difference 
+is vital to understand the target audience and mechanics of \emph{Claybound}.
+\newline
+\newline
+The term roguelike originates from the 1980's game Rogue (CITE). Typical roguelikes feature :
+\begin{itemize}
+    \item Permadeath - All progress is lost upon player death and there are no permanent upgrades.
+    \item Procedural generation - Levels are generated procedurally and are randomised every run.
+    \item Turn based gameplay - The game only advances when the player takes an action.
+\end{itemize}
+A rougelite game is one that takes inspiration from roguelikes but aren't entirely similar. 
+
 
 
 
