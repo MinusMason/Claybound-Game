@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  11 MAR 2026 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  11 MAR 2026 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1239,12 +1239,7 @@ Package pdftex.def Info: game4.png  used on input line 380.
 File: game_loop.png Graphic file (type png)
 <use game_loop.png>
 Package pdftex.def Info: game_loop.png  used on input line 390.
-(pdftex.def)             Requested size: 627.38058pt x 300.1878pt.
-
-Overfull \hbox (209.12686pt too wide) in paragraph at lines 390--391
- [][] 
- []
-
+(pdftex.def)             Requested size: 418.25372pt x 200.11272pt.
 
 
 [15
@@ -1254,12 +1249,7 @@ Overfull \hbox (209.12686pt too wide) in paragraph at lines 390--391
 File: game_aspects.png Graphic file (type png)
 <use game_aspects.png>
 Package pdftex.def Info: game_aspects.png  used on input line 398.
-(pdftex.def)             Requested size: 627.38058pt x 316.59612pt.
-
-Overfull \hbox (209.12686pt too wide) in paragraph at lines 398--399
- [][] 
- []
-
+(pdftex.def)             Requested size: 418.25372pt x 211.06073pt.
 
 
 [16
@@ -1285,7 +1275,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  122i,17n,121p,11022b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (16 pages, 1192453 bytes).
+Output written on template.pdf (16 pages, 1192450 bytes).
 PDF statistics:
  324 PDF objects out of 1000 (max. 8388607)
  276 compressed objects within 3 object streams
