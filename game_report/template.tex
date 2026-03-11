@@ -144,7 +144,7 @@ increasingly more difficult as time ticks by. Items can be found in boxes scatte
 
 \subsection{Target Audience}
 The game will be set at PEGI 12 due it containing mild violence, some horror elements and crude humour, however the game will be able to be enjoyed by a wide variety of age ranges and players alike.
-The primary audience will be players age 16 - 25 who are already fans of similar rouglikes such as Risk Of Rain 2 (CITE!), Hades (CITE!) or Vampire Survivors. This is due to them already understanding run based progression and item building already,
+The primary audience will be players age 16 - 25 who are already fans of similar rouglikes such as Risk Of Rain 2 (\cite{ror2}), Hades (\cite{steam:Hades}) or Vampire Survivors (\cite{vampiresurvivors}). This is due to them already understanding run based progression and item building already,
 meaning the core game loop does not need explaining, this audience will most likely value replayability of the story elements
 \newline
 \newline
@@ -168,15 +168,15 @@ Basic Movement Mechanics & Health \& Combat System & Multiple Dungeon Levels & H
 \addlinespace
 Four-Stat System (MIGHT, FINESSE, WEIRD, GAB) & Variety of Weapons & Sound System & Self-Made 3D Assets \\
 \addlinespace
-Dice Roll Chest Mechanic & Enemy NPCs with Cone Detection AI & NPC Scheduling \& Routines & Visual Novel Story Implementation \\
+Dice Roll Chest Mechanic & Enemy NPCs with Cone Detection AI & NPC Scheduling \& Routines & Multiplayer \\
 \addlinespace
-Item Pickup \& Stat Modification & Basic Boss Encounter & Stat-Specific NPC Interactions & Multiplayer \\
+Item Pickup \& Stat Modification & Basic Boss Encounter & Stat-Specific NPC Interactions & Procedurally Generated Levels \\
 \addlinespace
-Level Completion Condition & Tetris-Style Inventory & Main Menu with Lore & Procedurally Generated Levels \\
+Level Completion Condition & Basic Animation & Main Menu with Lore & \\
 \addlinespace
-Timer \& Difficulty Scaling & Basic Animation & & \\
+Timer \& Difficulty Scaling & Retro Shader Applied to Environment & Map & \\
 \addlinespace
-NPCs with Basic AI & Retro Shader Applied to Environment & & \\
+NPCs with Basic AI & & & \\
 \addlinespace
 Menus \& Basic UI & & & \\
 \addlinespace
@@ -231,6 +231,7 @@ throught the world with the dice roll system.
 The core gameplay loop is build around progression and risk management. Upon starting a new run, the homuculus rolls for random base stats. The player then enters the dungeon and engages in the main game mechanic: 
 fighting waves of enemies. Defeating these enemies drops gold, which can be spend at vendors to accquire new items, these items can also be accquired through interactables. Players must navigate the level to find 
 interactables or the portal to progress to the next floor via fighting a boss. Throughout this entire loop, a timer will be at the top of the screen constatnyl ticking up, steadily increasing the game's difficulty.
+A flow chartchart of the core game loop and aspects can be seen in Figure \ref{fig:gameloop} and \ref{fig:gameaspect} in appendix \ref{sec:loop}.
 \newline
 \newline 
 \textbf{The Stat System}
@@ -310,13 +311,15 @@ E.g. A huge boulder may require a "Might" check whilst convincing a skeleton to 
 
 \section{Prototype}
 The code for the two working game elements can be seen on my GitHub: (\url{https://github.com/MinusMason/Claybound-Game}).
+\newline
+The video showcasing the two working game elements can be seen from this link on youtube : (\url{https://youtu.be/nMQDGkwXr-o})
 \subsection{Prototype purpose}
 The purpose of the prototype and the two working game elements (and more) are the following:
 \begin{itemize}
-    \item Basic Player movement and animation - The player can move in every direction using the WASD keys, an idle animation plays whilst still and a run animation plays when moving. This can be seen in(FIGURE???) the appendix
-    \item Enemy spawn and movement - Enemy's spawn in and have basic AI to move to follow the player. This can be seen in (FIGURE???) appendix 
+    \item Basic Player movement and animation - The player can move in every direction using the WASD keys, an idle animation plays whilst still and a run animation plays when moving. This can be seen in Figure \ref{fig:idle} in appendix \ref{sec:prototype}
+    \item Enemy spawn and movement - Enemy's spawn in and have basic AI to move to follow the player. This can be seen in Figure \ref{fig:enemy} appendix \ref{sec:prototype}
     \item Working camera - A camera that follows the player, currently just a child object of the player. This will be improved upon in the final version.
-    \item Basic environment and obstacles - Using Unity's ProBuilder (CITE) some basic obstacles have been created for the player to move around, this will be further built upon for more interesting level design in the final version. This can be seen in (FIGURE???) the appendix.
+    \item Basic environment and obstacles - Using Unity's ProBuilder some basic obstacles have been created for the player to move around, this will be further built upon for more interesting level design in the final version.
 \end{itemize}
 \section{Conclusion}
 To conclude, thus far I have implemented a few main features of the game, one that I intented to implement but did not was the dice roll mechanic, this is the most unique function of the game but was not implemented for the two working game elements due to it being the most complex feature and requiring more time and polish. 
@@ -334,21 +337,69 @@ The main game features yet to be completed are : the dice roll mechanic, currenc
 \subsection{Roguelite vs Roguelike}
 \label{sec:genre}
 "Roguelike" and "Roguelite" are often used interchangably by players but they both contain very different approaches to game mechanics, Understanding this difference 
-is vital to understand the target audience and mechanics of \emph{Claybound}.
+is important to understand the target audience and mechanics of \emph{Claybound}.
 \newline
 \newline
-The term roguelike originates from the 1980's game Rogue (CITE). Typical roguelikes feature :
+The term roguelike originates from the 1980's game Rogue (\cite{steam:Rogue}). Typical roguelikes feature \cite{screenrant:roguelike_vs_roguelite}:
 \begin{itemize}
     \item Permadeath - All progress is lost upon player death and there are no permanent upgrades.
     \item Procedural generation - Levels are generated procedurally and are randomised every run.
     \item Turn based gameplay - The game only advances when the player takes an action.
 \end{itemize}
 A rougelite game is one that takes inspiration from roguelikes but aren't entirely similar. 
-
-
-
-
 \clearpage
+\subsection{Prototype Screenshots}
+\label{sec:prototype}
+\textbf{Character Model:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{game1.png}
+    \caption{A screenshot of the player character in game view}
+    \label{fig:yourlabel}
+\end{figure}
+\newline
+\textbf{Enemy Spawn:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{game2.png}
+    \caption{A screenshot of the player character surrounded by spawning enemies}
+    \label{fig:enemy}
+\end{figure}
+\clearpage
+\textbf{Idle Animation:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{game3.png}
+    \caption{A screenshot of the player character in its idle animation}
+    \label{fig:idle}
+\end{figure}
+\newline
+\textbf{Run Animation:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{game4.png}
+    \caption{A screenshot of the player character in its run}
+    \label{fig:yourlabel}
+\end{figure}
+\clearpage
+\subsection{Game Loop and Aspects}
+\label{sec:loop}
+\textbf{Game Loop Flow Chart:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.5\textwidth]{game_loop.png}
+    \caption{A flowchart of the game loop (dottend lines represent optional choices)}
+    \label{fig:gameloop}
+\end{figure}
+\clearpage
+\textbf{Game Aspects:}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.5\textwidth]{game_aspects.png}
+    \caption{A screenshot of the different game aspects}
+    \label{fig:gameaspect}
+\end{figure}
+
 
 
 

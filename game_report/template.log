@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  9 MAR 2026 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.20)  11 MAR 2026 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -847,7 +847,14 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitdp@description=\count383
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 128.
- (./template.aux)
+ (./template.aux
+
+LaTeX Warning: Label `fig:yourlabel' multiply defined.
+
+
+LaTeX Warning: Label `fig:yourlabel' multiply defined.
+
+)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -1065,23 +1072,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--171
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-[]|\T1/ptm/m/n/10.95 Visual Novel Story
- []
-
-
 Underfull \hbox (badness 3000) in paragraph at lines 173--173
 []|\T1/ptm/m/n/10.95 Item Pickup & Stat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[]|\T1/ptm/m/n/10.95 Level Com-ple-tion
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+[]|\T1/ptm/m/n/10.95 Procedurally Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-[]|\T1/ptm/m/n/10.95 Procedurally Gen-er-
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]|\T1/ptm/m/n/10.95 Level Com-ple-tion
  []
 
 
@@ -1103,7 +1105,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 194.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 (Font)              scaled to size 12.9599pt on input line 194.
-<megabonk.jpg, id=78, 1927.2pt x 1084.05pt>
+<megabonk.jpg, id=91, 1927.2pt x 1084.05pt>
 File: megabonk.jpg Graphic file (type jpg)
 <use megabonk.jpg>
 Package pdftex.def Info: megabonk.jpg  used on input line 209.
@@ -1118,7 +1120,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--225
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 229--241
 
  []
 
@@ -1127,51 +1129,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--240
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 245--259
+Underfull \hbox (badness 10000) in paragraph at lines 246--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--259
+Underfull \hbox (badness 10000) in paragraph at lines 246--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--259
+Underfull \hbox (badness 10000) in paragraph at lines 246--260
 
  []
 
 
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 260--266
+Underfull \hbox (badness 10000) in paragraph at lines 261--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--289
+Underfull \hbox (badness 10000) in paragraph at lines 269--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--289
+Underfull \hbox (badness 10000) in paragraph at lines 269--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--289
+Underfull \hbox (badness 10000) in paragraph at lines 269--290
 
  []
 
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 296--308
+Underfull \hbox (badness 10000) in paragraph at lines 297--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--308
+Underfull \hbox (badness 10000) in paragraph at lines 297--309
 
  []
 
@@ -1179,13 +1181,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--308
 
 [9]
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 312.
+(Font)              scaled to size 10.79993pt on input line 313.
 
 
 [10
 
 ] (./template.bbl
-Underfull \hbox (badness 5175) in paragraph at lines 28--32
+Underfull \hbox (badness 5175) in paragraph at lines 46--50
 []\T1/ptm/m/n/12 vedinad (2025).  Megabonk.  []$\T1/phv/m/sl/12 https : / / store . steampowered . com / app / 3405340 /
  []
 
@@ -1194,7 +1196,7 @@ Underfull \hbox (badness 5175) in paragraph at lines 28--32
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 336--342
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
 
  []
 
@@ -1202,27 +1204,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--342
 
 [12
 
-] (./template.aux)
+]
+<game1.png, id=175, 723.45282pt x 356.83313pt>
+File: game1.png Graphic file (type png)
+<use game1.png>
+Package pdftex.def Info: game1.png  used on input line 356.
+(pdftex.def)             Requested size: 209.12686pt x 103.14682pt.
+<game2.png, id=177, 626.34pt x 368.1253pt>
+File: game2.png Graphic file (type png)
+<use game2.png>
+Package pdftex.def Info: game2.png  used on input line 364.
+(pdftex.def)             Requested size: 209.12686pt x 122.9141pt.
+
+
+[13
+
+ <./game1.png> <./game2.png>]
+<game3.png, id=186, 546.54187pt x 337.26pt>
+File: game3.png Graphic file (type png)
+<use game3.png>
+Package pdftex.def Info: game3.png  used on input line 372.
+(pdftex.def)             Requested size: 209.12686pt x 129.04526pt.
+<game4.png, id=187, 444.91219pt x 357.58594pt>
+File: game4.png Graphic file (type png)
+<use game4.png>
+Package pdftex.def Info: game4.png  used on input line 380.
+(pdftex.def)             Requested size: 209.12686pt x 168.08177pt.
+
+
+[14
+
+ <./game3.png> <./game4.png>]
+<game_loop.png, id=195, 1281.78876pt x 613.29124pt>
+File: game_loop.png Graphic file (type png)
+<use game_loop.png>
+Package pdftex.def Info: game_loop.png  used on input line 390.
+(pdftex.def)             Requested size: 627.38058pt x 300.1878pt.
+
+Overfull \hbox (209.12686pt too wide) in paragraph at lines 390--391
+ [][] 
+ []
+
+
+
+[15
+
+ <./game_loop.png>]
+<game_aspects.png, id=201, 1300.86pt x 656.4525pt>
+File: game_aspects.png Graphic file (type png)
+<use game_aspects.png>
+Package pdftex.def Info: game_aspects.png  used on input line 398.
+(pdftex.def)             Requested size: 627.38058pt x 316.59612pt.
+
+Overfull \hbox (209.12686pt too wide) in paragraph at lines 398--399
+ [][] 
+ []
+
+
+
+[16
+
+ <./game_aspects.png>] (./template.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35567 strings out of 473190
- 780631 string characters out of 5715799
+ 35643 strings out of 473190
+ 781964 string characters out of 5715799
  1264071 words of memory out of 5000000
- 58238 multiletter control sequences out of 15000+600000
+ 58299 multiletter control sequences out of 15000+600000
  618083 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,17n,121p,11022b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (12 pages, 460855 bytes).
+Output written on template.pdf (16 pages, 1192461 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

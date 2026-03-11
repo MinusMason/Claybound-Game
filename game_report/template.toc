@@ -19,4 +19,6 @@
 \contentsline {section}{References}{11}{section*.4}%
 \contentsline {section}{\numberline {A}Appendix}{12}{appendix.A}%
 \contentsline {subsection}{\numberline {A.1}Roguelite vs Roguelike}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Prototype Screenshots}{13}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Game Loop and Aspects}{15}{subsection.A.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
