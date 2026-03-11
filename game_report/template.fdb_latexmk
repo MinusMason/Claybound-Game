@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex template"] 1773237096.58181 "template.aux" "template.bbl" "template" 1773237099.14888 0
+["bibtex template"] 1773237096.58181 "template.aux" "template.bbl" "template" 1773237634.59565 0
   "./references.bib" 1773237079.04804 2509 33f2d8ed5ad59b4376e53f1cb7890af7 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "template.aux" 1773237098.86883 11918 ccafa917050c133cf8aabb5a7bf5fbe1 "pdflatex"
+  "template.aux" 1773237634.32481 11918 ccafa917050c133cf8aabb5a7bf5fbe1 "pdflatex"
   (generated)
   "template.bbl"
   "template.blg"
   (rewritten before read)
-["pdflatex"] 1773237096.68395 "/Users/masonbuckle/Documents/GitHub/Claybound-Game/game_report/template.tex" "template.pdf" "template" 1773237099.14902 0
-  "/Users/masonbuckle/Documents/GitHub/Claybound-Game/game_report/template.tex" 1773237093.88029 21286 87d5028440aee37f90c2337d3f114107 ""
+["pdflatex"] 1773237632.15961 "/Users/masonbuckle/Documents/GitHub/Claybound-Game/game_report/template.tex" "template.pdf" "template" 1773237634.5958 0
+  "/Users/masonbuckle/Documents/GitHub/Claybound-Game/game_report/template.tex" 1773237631.93089 21284 824043771309af2ef2d87b3f952ba2f6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -238,11 +238,11 @@
   "game_aspects.png" 1773235279.85177 383738 5eaf9aa6d0c543de6172ce12619c2ce2 ""
   "game_loop.png" 1773235279.84458 153969 4421149bf563d5712c6b6ad9f37aec23 ""
   "megabonk.jpg" 1772987684.44924 351775 4488ba016232024b4ce03acc67f853e6 ""
-  "template.aux" 1773237098.86883 11918 ccafa917050c133cf8aabb5a7bf5fbe1 "pdflatex"
+  "template.aux" 1773237634.32481 11918 ccafa917050c133cf8aabb5a7bf5fbe1 "pdflatex"
   "template.bbl" 1773237096.68087 1714 2550104766168f2072d295d332dd4aae "bibtex template"
-  "template.out" 1773237098.11266 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "template.tex" 1773237093.88029 21286 87d5028440aee37f90c2337d3f114107 ""
-  "template.toc" 1773237098.87197 1850 9a65f74fa7a6ae1baad8ba4126ebf9b3 "pdflatex"
+  "template.out" 1773237633.57442 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "template.tex" 1773237631.93089 21284 824043771309af2ef2d87b3f952ba2f6 ""
+  "template.toc" 1773237634.3279 1850 9a65f74fa7a6ae1baad8ba4126ebf9b3 "pdflatex"
   (generated)
   "template.aux"
   "template.log"
