@@ -18,6 +18,9 @@ public class enemySpawner : MonoBehaviour
 
     void Update()
     {
+        // Clean up destroyed enemies so new ones can spawn to replace them
+        activeEnemies.RemoveAll(e => e == null);
+
         float difficulty = GameTimer.Instance != null ? GameTimer.Instance.DifficultyMultiplier : 1f;
         float scaledInterval = spawnInterval / difficulty;
 
