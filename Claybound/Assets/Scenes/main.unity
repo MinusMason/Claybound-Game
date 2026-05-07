@@ -1453,6 +1453,37 @@ MonoBehaviour:
   gab: 0
   minStatValue: 1
   maxStatValue: 5
+--- !u!114 &710803302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710803293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233067a5ab4b24afab147bfa1cf88a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoAttack
+  projectilePrefab: {fileID: 295147326992299588, guid: 4fe16c1db5d884d69b84a723423bb796, type: 3}
+  baseDamage: 1
+  attackRate: 300
+  projectileCount: 1
+  attackRange: 15
+--- !u!114 &710803303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710803293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dfc36080e06496f93727f78cf7111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitFlash
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.15
 --- !u!1 &724003850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,6 +1962,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 710803301}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 710803302}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 710803303}
   m_SourcePrefab: {fileID: 100100000, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
 --- !u!1 &988490323
 GameObject:
@@ -4493,7 +4530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemySpawner
   enemyPrefab: {fileID: 7179911346431482589, guid: 31cb0c0b7be1e6c48be193570ffde79d, type: 3}
   player: {fileID: 710803295}
-  enemiesToSpawn: 100
+  enemiesToSpawn: 50
   spawnRadius: 20
   spawnInterval: 0.05
 --- !u!4 &1983238145
