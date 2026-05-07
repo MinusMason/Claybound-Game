@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     private float pitch;
 
     private void Start()
-
+    {
         Vector3 angles = transform.eulerAngles;
         yaw = angles.y;
         pitch = angles.x;
