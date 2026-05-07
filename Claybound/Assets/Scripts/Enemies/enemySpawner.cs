@@ -18,11 +18,13 @@ public class enemySpawner : MonoBehaviour
 
     void Update()
     {
-        // Spawning Logic
+        float difficulty = GameTimer.Instance != null ? GameTimer.Instance.DifficultyMultiplier : 1f;
+        float scaledInterval = spawnInterval / difficulty;
+
         if (activeEnemies.Count < enemiesToSpawn)
         {
             spawnTimer += Time.deltaTime;
-            if (spawnTimer >= spawnInterval)
+            if (spawnTimer >= scaledInterval)
             {
                 SpawnEnemy();
                 spawnTimer = 0f;
@@ -32,7 +34,7 @@ public class enemySpawner : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Centralized movement update for every enemy. 
+        // Centralized movement update for every enemy
         for (int i = 0; i < activeEnemies.Count; i++)
         {
             if (activeEnemies[i] != null)
