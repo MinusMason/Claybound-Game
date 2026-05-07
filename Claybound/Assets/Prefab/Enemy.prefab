@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2992287633052004473}
   - component: {fileID: 2508561561307295091}
   - component: {fileID: 7646159252209463382}
+  - component: {fileID: -2958350568555301621}
+  - component: {fileID: -1072863972856260005}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -158,3 +160,30 @@ MonoBehaviour:
   moveSpeed: 3
   damagePerSecond: 5
   damageRange: 1
+--- !u!114 &-2958350568555301621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179911346431482589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27732d08fb264f0e88a3b4bf4ea262b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 30
+--- !u!114 &-1072863972856260005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179911346431482589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dfc36080e06496f93727f78cf7111d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitFlash
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.15
