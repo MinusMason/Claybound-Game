@@ -1504,6 +1504,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HitFlash
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.15
+--- !u!114 &710803304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710803293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f559196c516fb4282884d36abbb1bfb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationFrameRate
+  framesPerSecond: 7
 --- !u!1 &724003850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2005,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 710803303}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 710803304}
   m_SourcePrefab: {fileID: 100100000, guid: f0a8c251bf40f4a15b1649bb20c82db7, type: 3}
 --- !u!1 &988490323
 GameObject:
