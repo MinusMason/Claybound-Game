@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AnimationFrameRate : MonoBehaviour
 {
-    [Range(4, 30)]]
+    [Range(4, 30)]
     public int framesPerSecond = 12;
 
     private Animator animator;
