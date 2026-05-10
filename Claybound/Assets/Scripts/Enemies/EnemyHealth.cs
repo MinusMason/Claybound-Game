@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth = 30f;
+    public int goldDrop = 5;
     private float currentHealth;
     private HitFlash hitFlash;
     private float nextFlashTime;
@@ -29,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        GoldManager.Instance?.Add(goldDrop);
         Destroy(gameObject);
     }
 }
