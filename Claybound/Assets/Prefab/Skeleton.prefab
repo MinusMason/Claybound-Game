@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy
   moveSpeed: 4
-  damagePerSecond: 8
+  damagePerSecond: 10
   damageRange: 2.5
   isDead: 0
   spawnDuration: 3

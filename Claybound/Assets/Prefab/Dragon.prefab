@@ -142,13 +142,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Boss
   maxHealth: 500
   phase1Speed: 3
-  phase1Damage: 10
+  phase1Damage: 20
   phase1AttackInterval: 3
   phase2Speed: 6
-  phase2Damage: 20
+  phase2Damage: 50
   phase2AttackInterval: 1.8
   goldDrop: 50
   portal: {fileID: 0}
+  isDead: 0
 --- !u!95 &2749089615322472961
 Animator:
   serializedVersion: 7

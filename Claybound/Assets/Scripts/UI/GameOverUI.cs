@@ -23,12 +23,22 @@ public class GameOverUI : MonoBehaviour
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
 
-        Time.timeScale = 0f;
+        Time.timeScale   = 0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible   = true;
     }
 
     public void Restart()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale   = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible   = false;
+
+        PlayerStats.ResetStatics();
+        GoldManager.ResetStatics();
+        AutoAttack.ResetStatics();
+        GameTimer.ResetStatics();
+
+        SceneManager.LoadScene(1); // Always restart from level 1
     }
 }

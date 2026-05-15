@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class enemySpawner : MonoBehaviour
@@ -12,9 +13,24 @@ public class enemySpawner : MonoBehaviour
     public float spawnRadius = 20f;
     public float spawnInterval = 0.5f;
 
+   
+    public int enemiesPerLevel = 50;
+   
+    public float intervalMultiplierPerLevel = 0.75f;
+
     // List to keep track of all active enemies
     private List<enemy> activeEnemies = new List<enemy>();
     private float spawnTimer;
+    private int   scaledEnemyCap;
+    private float scaledInterval;
+
+    private void Start()
+    {
+        // Build index 1 = level 1, 2 = level 2
+        int level = Mathf.Max(0, SceneManager.GetActiveScene().buildIndex - 1);
+        scaledEnemyCap = enemiesToSpawn + enemiesPerLevel * level;
+        scaledInterval = spawnInterval * Mathf.Pow(intervalMultiplierPerLevel, level);
+    }
 
     void Update()
     {
@@ -22,12 +38,12 @@ public class enemySpawner : MonoBehaviour
         activeEnemies.RemoveAll(e => e == null);
 
         float difficulty = GameTimer.Instance != null ? GameTimer.Instance.DifficultyMultiplier : 1f;
-        float scaledInterval = spawnInterval / difficulty;
+        float timedInterval = scaledInterval / difficulty;
 
-        if (activeEnemies.Count < enemiesToSpawn)
+        if (activeEnemies.Count < scaledEnemyCap)
         {
             spawnTimer += Time.deltaTime;
-            if (spawnTimer >= scaledInterval)
+            if (spawnTimer >= timedInterval)
             {
                 SpawnEnemy();
                 spawnTimer = 0f;
