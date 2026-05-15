@@ -5,6 +5,7 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 30f;
     public int goldDrop = 5;
     private float currentHealth;
+    private bool  isDead = false;
     private HitFlash hitFlash;
     private float nextFlashTime;
 
@@ -16,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        if (isDead) return;
         currentHealth -= amount;
 
         if (Time.time >= nextFlashTime)
@@ -30,7 +32,9 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         GoldManager.Instance?.Add(goldDrop);
-        Destroy(gameObject);
+        GetComponent<enemy>()?.TriggerDeath();
+        Destroy(gameObject, 2f); // delay to let death animation play
     }
 }

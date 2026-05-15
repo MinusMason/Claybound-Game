@@ -10,6 +10,7 @@ public class playerMovement : MonoBehaviour
     private Camera cam;
     private Vector3 moveDir;
 
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -48,7 +49,9 @@ public class playerMovement : MonoBehaviour
 
         moveDir = (camForward * v + camRight * h).normalized;
 
-        animator.SetBool("isRunning", moveDir.magnitude > 0.1f);
+        bool isRunning = moveDir.magnitude > 0.1f;
+        animator.SetBool("isRunning", isRunning);
+
     }
 
     private void FixedUpdate()

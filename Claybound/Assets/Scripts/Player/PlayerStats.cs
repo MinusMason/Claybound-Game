@@ -14,24 +14,46 @@ public class PlayerStats : MonoBehaviour
     public int minStatValue = 1;
     public int maxStatValue = 5;
 
+    // Stores so they can stay between scenes
+    private static int  s_might   = -1;
+    private static int  s_finesse = -1;
+    private static int  s_weird   = -1;
+    private static int  s_gab     = -1;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        else { Destroy(gameObject); return; }
 
-        RollStats();
+        if (s_might < 0)   // First time, roll new stats
+            RollStats();
+        else               // Next Level save old stats
+        {
+            might   = s_might;
+            finesse = s_finesse;
+            weird   = s_weird;
+            gab     = s_gab;
+        }
     }
 
     private void RollStats()
     {
-        might   = Random.Range(minStatValue, maxStatValue + 1);
+        might = Random.Range(minStatValue, maxStatValue + 1);
         finesse = Random.Range(minStatValue, maxStatValue + 1);
-        weird   = Random.Range(minStatValue, maxStatValue + 1);
-        gab     = Random.Range(minStatValue, maxStatValue + 1);
+        weird = Random.Range(minStatValue, maxStatValue + 1);
+        gab = Random.Range(minStatValue, maxStatValue + 1);
 
+        SaveToStatic();
         Debug.Log($"Stats rolled — MIGHT:{might} FINESSE:{finesse} WEIRD:{weird} GAB:{gab}");
     }
 
+    private void SaveToStatic()
+    {
+        s_might   = might;
+        s_finesse = finesse;
+        s_weird   = weird;
+        s_gab     = gab;
+    }
 
     public void ModifyStat(string statName, int amount)
     {
@@ -42,5 +64,6 @@ public class PlayerStats : MonoBehaviour
             case "weird":   weird   = Mathf.Max(0, weird   + amount); break;
             case "gab":     gab     = Mathf.Max(0, gab     + amount); break;
         }
+        SaveToStatic();   
     }
 }

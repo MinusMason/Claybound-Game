@@ -17,6 +17,12 @@ public class Interactable : MonoBehaviour
 
     private bool playerInRange = false;
     private bool hasBeenUsed = false;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     private void Update()
     {
@@ -47,8 +53,10 @@ public class Interactable : MonoBehaviour
         hasBeenUsed = true;
         DiceRollUI.Instance?.HidePrompt();
 
+        animator?.SetTrigger("Open");
+
         int statValue = GetStatValue();
-        int diceRoll  = Random.Range(1, 7); // d6
+        int diceRoll  = Random.Range(1, 7); // d6 (can change to a higher range if needed)
         int total     = statValue + diceRoll;
         bool success  = total >= difficultyValue;
 
@@ -67,10 +75,10 @@ public class Interactable : MonoBehaviour
         if (PlayerStats.Instance == null) return 0;
         switch (statRequired)
         {
-            case StatType.Might:   return PlayerStats.Instance.might;
+            case StatType.Might: return PlayerStats.Instance.might;
             case StatType.Finesse: return PlayerStats.Instance.finesse;
-            case StatType.Weird:   return PlayerStats.Instance.weird;
-            case StatType.Gab:     return PlayerStats.Instance.gab;
+            case StatType.Weird: return PlayerStats.Instance.weird;
+            case StatType.Gab: return PlayerStats.Instance.gab;
             default: return 0;
         }
     }
