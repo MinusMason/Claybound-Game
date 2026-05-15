@@ -27,6 +27,8 @@ public class GoldManager : MonoBehaviour
         onGoldChanged?.Invoke(Gold);
     }
 
+    public static void ResetStatics() { s_gold = 0; }
+
     public void Add(int amount)
     {
         Gold += amount;

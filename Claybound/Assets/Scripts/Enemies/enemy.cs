@@ -45,7 +45,12 @@ public class enemy : MonoBehaviour
         Vector3 direction = (playerTransform.position - transform.position).normalized;
         direction.y = 0;
 
-        rb.linearVelocity = new Vector3(direction.x * moveSpeed, rb.linearVelocity.y, direction.z * moveSpeed);
+        // Difficulty scaling 
+        float difficulty   = GameTimer.Instance != null ? GameTimer.Instance.DifficultyMultiplier : 1f;
+        float scaledSpeed  = moveSpeed       * (1f + (difficulty - 1f) * 0.1f);
+        float scaledDamage = damagePerSecond * (1f + (difficulty - 1f) * 0.2f);
+
+        rb.linearVelocity = new Vector3(direction.x * scaledSpeed, rb.linearVelocity.y, direction.z * scaledSpeed);
 
         if (direction != Vector3.zero)
             transform.forward = direction;
@@ -56,7 +61,7 @@ public class enemy : MonoBehaviour
         // Damage player if close enough
         float distance = Vector3.Distance(transform.position, playerTransform.position);
         if (distance <= damageRange && playerHealth != null)
-            playerHealth.TakeDamage(damagePerSecond * Time.fixedDeltaTime);
+            playerHealth.TakeDamage(scaledDamage * Time.fixedDeltaTime);
     }
 
     public void TriggerDeath()

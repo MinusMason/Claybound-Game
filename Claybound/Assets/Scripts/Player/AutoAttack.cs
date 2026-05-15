@@ -6,7 +6,7 @@ public class AutoAttack : MonoBehaviour
     public GameObject projectilePrefab;
 
     [Header("Stats")]
-    public float baseDamage = 10f;
+    public float baseDamage = 5f;
     public float attackRate = 1f; // Attacks per second
     public int projectileCount = 1; // Certain ttems can increase this
 
@@ -40,6 +40,8 @@ public class AutoAttack : MonoBehaviour
             attackTimer = 0f;
         }
     }
+
+    public static void ResetStatics() { s_extraDamage = 0f; s_extraProjectiles = 0; }
 
     public void ModifyWeapon(int projectileBonus, float damageBonus)
     {
@@ -93,9 +95,9 @@ public class AutoAttack : MonoBehaviour
             }
         }
 
-        // Check boss will override enemy if closer
+        // Check boss 
         Boss boss = FindFirstObjectByType<Boss>();
-        if (boss != null)
+        if (boss != null && !boss.isDead)
         {
             float dist = Vector3.Distance(transform.position, boss.transform.position);
             if (dist < minDist)

@@ -31,7 +31,7 @@ public class Boss : MonoBehaviour
     private PlayerHealth playerHealth;
 
     private bool  inPhase2  = false;
-    private bool  isDead    = false;
+    public  bool  isDead    = false;
     private float currentSpeed;
     private float currentDamage;
     private float attackTimer;

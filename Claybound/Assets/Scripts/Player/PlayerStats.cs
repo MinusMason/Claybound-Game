@@ -55,6 +55,11 @@ public class PlayerStats : MonoBehaviour
         s_gab     = gab;
     }
 
+    public static void ResetStatics()
+    {
+        s_might = s_finesse = s_weird = s_gab = -1;
+    }
+
     public void ModifyStat(string statName, int amount)
     {
         switch (statName.ToLower())
