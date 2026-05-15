@@ -7,57 +7,64 @@ public class AutoAttack : MonoBehaviour
 
     [Header("Stats")]
     public float baseDamage = 10f;
-    public float attackRate = 1f;      // Attacks per second
-    public int projectileCount = 1;    // Items can increase this
+    public float attackRate = 1f; // Attacks per second
+    public int projectileCount = 1; // Certain ttems can increase this
 
     [Header("Range")]
     public float attackRange = 15f;
 
+    // Persists across scene loads so that shop upgrades carry over
+    private static float s_extraDamage = 0f;
+    private static int   s_extraProjectiles = 0;
+
     private float attackTimer;
+
+    private void Start()
+    {
+        // Reapply any previous upgrades in new level
+        baseDamage += s_extraDamage;
+        projectileCount += s_extraProjectiles;
+    }
 
     private void Update()
     {
         attackTimer += Time.deltaTime;
 
-        if (attackTimer >= 1f / attackRate)
+        // Weird scales attack speed
+        float weirdMult = PlayerStats.Instance != null ? 1f + (PlayerStats.Instance.weird - 1) * 0.15f : 1f;
+        float scaledRate = attackRate * weirdMult;
+
+        if (attackTimer >= 1f / scaledRate)
         {
             TryAttack();
             attackTimer = 0f;
         }
     }
 
+    public void ModifyWeapon(int projectileBonus, float damageBonus)
+    {
+        projectileCount += projectileBonus;
+        baseDamage += damageBonus;
+        s_extraProjectiles += projectileBonus;
+        s_extraDamage += damageBonus;
+    }
+
     private void TryAttack()
     {
-        enemy[] enemies = FindObjectsByType<enemy>(FindObjectsSortMode.None);
-        if (enemies.Length == 0) return;
-
-        // Find nearest enemy
-        enemy nearest = null;
-        float minDist = attackRange;
-        foreach (enemy e in enemies)
-        {
-            float dist = Vector3.Distance(transform.position, e.transform.position);
-            if (dist < minDist)
-            {
-                minDist = dist;
-                nearest = e;
-            }
-        }
-
-        if (nearest == null) return;
-
         // Scale damage with Might stat
         float damage = baseDamage;
         if (PlayerStats.Instance != null)
             damage = baseDamage * (1f + (PlayerStats.Instance.might - 1) * 0.2f);
 
-        // Fire projectiles — if count > 1, spread them in a small arc
+        Vector3 targetPos = GetNearestTargetPosition();
+        if (targetPos == Vector3.zero) return;
+
+        // Fire projectiles
         for (int i = 0; i < projectileCount; i++)
         {
             Vector3 spawnPos = transform.position + Vector3.up * 1f;
-            Vector3 targetPos = nearest.transform.position + Vector3.up * 0.5f;
-            Vector3 baseDir = (targetPos - spawnPos).normalized;
-
+            Vector3 baseDir  = (targetPos - spawnPos).normalized;
+            // if count > 1 then spread in a small arc
             if (projectileCount > 1)
             {
                 float spread = (i - (projectileCount - 1) / 2f) * 15f;
@@ -67,5 +74,34 @@ public class AutoAttack : MonoBehaviour
             GameObject proj = Instantiate(projectilePrefab, spawnPos, Quaternion.LookRotation(baseDir));
             proj.GetComponent<Projectile>()?.Init(baseDir, damage);
         }
+    }
+
+    private Vector3 GetNearestTargetPosition()
+    {
+        float minDist = attackRange;
+        Vector3 bestTarget = Vector3.zero;
+
+        // Check normal enemies
+        foreach (enemy e in FindObjectsByType<enemy>(FindObjectsSortMode.None))
+        {
+            if (e.isDead) continue;
+            float dist = Vector3.Distance(transform.position, e.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                bestTarget = e.transform.position + Vector3.up * 0.5f;
+            }
+        }
+
+        // Check boss will override enemy if closer
+        Boss boss = FindFirstObjectByType<Boss>();
+        if (boss != null)
+        {
+            float dist = Vector3.Distance(transform.position, boss.transform.position);
+            if (dist < minDist)
+                bestTarget = boss.transform.position + Vector3.up * 0.5f;
+        }
+
+        return bestTarget;
     }
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class enemySpawner : MonoBehaviour
 {
     [Header("References")]
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefabs;
     public Transform player;
 
     [Header("Spawning Settings")]
@@ -51,10 +51,13 @@ public class enemySpawner : MonoBehaviour
     {
         // Pick a random position in a circle around the spawner
         Vector2 randomCircle = Random.insideUnitCircle.normalized * spawnRadius;
-        Vector3 spawnPos = new Vector3(randomCircle.x, 1f, randomCircle.y) + transform.position;
+        Vector3 spawnPos = new Vector3(randomCircle.x, -1f, randomCircle.y) + transform.position;
+
+        // Pick a random enemy type
+        GameObject prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
 
         // Instantiate and Initialize
-        GameObject newEnemyObj = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+        GameObject newEnemyObj = Instantiate(prefab, spawnPos, Quaternion.identity);
         enemy newEnemy = newEnemyObj.GetComponent<enemy>();
 
         newEnemy.Initialize(player);
